@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.asli{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    overflow: hidden;
+}
+div.entrypic{
+    width: inherit;
+    height: inherit;
+}
+div.entrypic>img{
+    width: inherit;
+    height: auto;
+}
+div.citylist{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+div.citylist1>ul{
+    width: 80%;
+    margin: auto;
+}
+div.citylist1>ul>li{
+    width: 100%;
+    list-style: none;
+    box-shadow: 0px 1px lightgrey;
+    padding: 20px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    color: rgb(121, 201, 0);
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+.content {
+    /* padding: 0 18px; */
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+div.countries-list {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+/* .countries-list>div{
+    background-color: aqua;
+} */
+.countries-list>div>ul>li {
+    list-style: none;
+}
+.countries-list>div>ul>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.countries-list>div>ul>li>a:hover {
+    color: rgb(121, 201, 0);
+}
