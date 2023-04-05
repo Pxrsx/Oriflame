@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ori Joon</title>
+    <link rel="stylesheet" href="./Fawesome/css/all.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
 </head>
 <body>
+
     <Div class="navtop">
         <header>
             <nav>
@@ -15,13 +18,15 @@
                 <div class="navleft">
                     <div class="menuicon">
                         <input type="checkbox" id="myInput">
-                        <label for="myInput">
+                        <label for="myInput" Id="togglemenu">
                         <span class="bar top"></span>
                         <span class="bar middle"></span>
                         <span class="bar bottom"></span>
                         </label>
                     </div>
-                    <div class="navuser">bebel</div>
+                    <div class="navuser">
+                        <span id="usericon" class="fa-light fa-user"></span>
+                    </div>
                     <a href="#">Our Story</a>
                     <a href="#">Join Us</a>
                 </div>
@@ -32,66 +37,1031 @@
 
                 <div class="navright">
                     <div class="searchbar">
-                        <img src="" alt="">
+                        <span class="fa-light fa-search"></span>
                         <input type="search" placeholder="Search">
                     </div>
-                    <div>bebel</div>
+                    <div class="shoppingbag">
+                        <span  id="shoppingbag" class="fa-light fa-shopping-bag">
+                            <div>
+                                <div class="bagmenu" id="bagmenu">
+                                    <div class="bagmenuright">
+                                        <a href="#">Shopping bag (0)</a>
+                                        <div>
+                                            <p>Empty bag</p>
+                                            <p>- Looking pretty empty in your bag -</p>
+                                        </div>
+                                        <a href="#">GO TO BASKET</a>
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </span>
+                    </div>
                 </div>
                 
+                <div class="bluebar" id="bluebar">
+                    <div></div>
+                    <div >
+                        <p>
+                            Free shipping, Rewards & more! Register here
+                        </p>
+                    </div>
+                    <div id="closebluebar">
+                       <p>
+                        &#xd7;
+                       </p> 
+                    </div>
+                </div>
             </nav>
         </header>
     </Div>
-    <div class="menu">
-        <div class="menulist">
-            <ul>
-                <li>
-                    Best Offer
-                </li>
-                <li>
-                    eCatalogue
-                </li>
-                <li>
-                    Inspiration
-                </li>
-                <li>
-                    Skin care
-                </li>
-                <li>
-                    Make-Up
-                </li>
-                <li>
-                    Fragrance
-                </li>
-                <li>
-                    Bath & body
-                </li>
-                <li>
-                    Hair
-                </li>
-                <li>
-                    Accessories
-                </li>
-                <li>
-                    Wellness
-                </li>
-                <li>
-                    Men
-                </li>
-                <li>
-                    Kids & Baby
-                </li>
-                <li>
-                    Novelties
-                </li>
-                <li>
-                    Beauty Rewards Programme
-                </li>                
-            </ul>
+    <div class="menublur">
+        <div class="menu">
+            <div class="menulist">
+                <ul>
+                    <li>
+                        Best Offer
+                    </li>
+                    <li>
+                        eCatalogue
+                        <div class="menunon">
+                            <div class="menucontent1">
+                                <div> 
+                                    <a href="#">Catalogue 05</a>
+                                    <p>15.3.2023 - 5.4.2023</p>    
+                                </div>
+                                
+                                <a href="#">
+                                    <img src="https://viewer.ipaper.io/oriflame/uk/2023005/Image.ashx?PageNumber=1&ImageType=Normal&w=750&h=684&q=60" alt="Catalogue ">
+                                </a>
+                                <a href="#">SEE ALL</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Inspiration
+                        <div class="menunon">
+                            <div class="menucontent1">
+                                <div class="editorials">
+                                    <a href="#">
+                                        <img src="https://media-we-cdn.oriflame.com/contentImage?externalMediaId=5c4210f2-e52b-4e20-bffd-f6e9231fb974&name=beauty-edit-banner-image&inputFormat=png" alt="">
+                                        <span>EDITORIALS</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Skin care
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    <div class="submenutitle">
+                                        <span class="fa-light fa-paintbrush"></span>
+                                        <h3>What's New</h3>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Moisturisers
+                                                </h4>
+                                            </li>
+                                            
+                                            
+                                            <li>
+                                                Day cream
+                                            </li>
+                                            <li>
+                                                Night cream
+                                            </li>
+                                            <li>
+                                                BB & CC cream
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Serum & Treatment
+                                                </h4>
+                                            </li>
+                                            
+                                            
+                                            <li>
+                                                Serum & Booster
+                                            </li>
+                                            <li>
+                                                Exfoliator
+                                            </li>
+                                            <li>
+                                                Acne & Blemish
+                                            </li>
+                                            <li>
+                                                Neck  & Décolletage
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Eye & Lip care</h4>
+                                            </li>
+                                            <li>
+                                                Eye creams
+                                            </li>
+                                            <li>Lip care</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Cleansers
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                Cleanser
+                                            </li>
+                                            <li>
+                                                Make-up remover
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Mask
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                Sheet masks
+                                            </li>
+                                            <li>Other masks</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Sun care
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                Face sun cream
+                                            </li>
+                                            <li>
+                                                Sunscreen
+                                            </li>
+                                            <li>
+                                                After sun & Self-tanning
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Skin care tools</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Skin care sets</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Toner essences & Mist
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Brands</h4>
+                                            </li>
+                                            <li>Novage+</li>
+                                            <li>Waunt</li>
+                                            <li>Love Nature</li>
+                                            <li>Optimals</li>
+                                            <li>Royal Velvet</li>
+                                            <li>Sun 360</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Make-Up
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    <div class="submenutitle">
+                                        <span class="fa-light fa-paintbrush"></span>
+                                        <h3>What's New</h3>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Face
+                                                </h4>
+                                            </li>
+                                            
+                                            
+                                            <li>
+                                                Foundation
+                                            </li>
+                                            <li>
+                                                Concealer & Corrector
+                                            </li>
+                                            <li>
+                                                Powder
+                                            </li>
+                                            <li>
+                                                Contour & Highlighter
+                                            </li>
+                                            <li>
+                                                Blush & Bronzer
+                                            </li>
+                                            <li>
+                                                BB & CC cream
+                                            </li>
+                                            <li>Primer & Setting mist</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Eyes</h4>
+                                            </li>
+                                            <li>
+                                                Mascara
+                                            </li>
+                                            <li>Eyeliner</li>
+                                            <li>Eyeshadow</li>
+                                            <li>Eyebrows</li>
+                                            <li>Eye make-up remover</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Lips
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                Lipstick
+                                            </li>
+                                            <li>
+                                                Lip gloss
+                                            </li>
+                                            <li>Lip liner</li>
+                                            <li>Lip care</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Nails
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                Nail polish
+                                            </li>
+                                            <li>
+                                                Nail care
+                                            </li>
+                                            <li>
+                                                Nail polish remover
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Make-up tools
+                                                </h4>
+                                            </li>
+                                            <li>Brushes & Applicators</li>
+                                            <li>
+                                                Other make-up tools
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Palettes</h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Brands</h4>
+                                            </li>
+                                            <li>THE ONE</li>
+                                            <li>Giordani Gold</li>
+                                            <li>OnColour</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Fragrance
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    <div class="submenutitle">
+                                        <span class="fa-light fa-paintbrush"></span>
+                                        <h3>What's New</h3>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Women
+                                                </h4>
+                                            </li>
+                                            
+                                            
+                                            <li>
+                                                Fragrance
+                                            </li>
+                                            <li>
+                                                Body care
+                                            </li>
+                                            <li>
+                                                Body spray & Deodorant
+                                            </li>
+                                            <li>
+                                                Gift set & Purse spray
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Brands</h4>
+                                            </li>
+                                            <li>
+                                                Eclat
+                                            </li>
+                                            <li>Giordani Gold</li>
+                                            <li>Giordani Man</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Lips
+                                                </h4>
+                                            </li>
+                                            <li>
+                                                Lipstick
+                                            </li>
+                                            <li>
+                                                Lip gloss
+                                            </li>
+                                            <li>Lip liner</li>
+                                            <li>Lip care</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Bath & body
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    <div class="submenutitle">
+                                        <span class="fa-light fa-paintbrush"></span>
+                                        <h3>What's New</h3>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Body care
+                                                </h4>
+                                            </li>
+                                            
+                                            
+                                            <li>
+                                                Body moisturiser
+                                            </li>
+                                            <li>
+                                                Hand care
+                                            </li>
+                                            <li>
+                                                Foot care
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Bath & Body tools</h4>
+                                            </li>
+                                            <li>
+                                                Manicure & Pedicure
+                                            </li>
+                                            <li>Body sponges & Others</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Oral care
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Sun care
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Hair removal
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Intimate care
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Deodorants & Anti-perspirants
+                                                </h4>
+                                            </li>
+                                        
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Brands</h4>
+                                            </li>
+                                            <li>
+                                                Swedish Spa
+                                            </li>
+                                            <li>Love Nature</li>
+                                            <li>Feel good</li>
+                                            <li>Sun 360</li>
+                                            <li>Feet Up</li>
+                                        </ul>
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Hair
+                        Bath & body
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    <div class="submenutitle">
+                                        <span class="fa-light fa-paintbrush"></span>
+                                        <h3>What's New</h3>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Shampoo
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Conditioner
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Styling products
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Treatments
+                                                </h4>
+                                            </li>
+                                            
+                                            
+                                            <li>
+                                                Hair mask
+                                            </li>
+                                            <li>
+                                                Leave-in treatments
+                                            </li>
+                                            <li>
+                                                Hair oil
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Hair tools & Accessories</h4>
+                                            </li>
+                                            <li>
+                                                Hair Brushes & Combs
+                                            </li>
+                                
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Brands
+                                                </h4>
+                                            </li>
+                                            <li>Eleo</li>
+                                            <li>Beautanicals</li>
+                                            <li>HairX StyleSmart</li>
+                                            <li>Milk & Honey Gold</li>
+                                            <li>Love Nature</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Accessories
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    <div class="submenutitle">
+                                        <span class="fa-light fa-paintbrush"></span>
+                                        <h3>What's New</h3>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Jewellery
+                                                </h4>
+                                            </li>
+                                            <li>Earrings</li>
+                                            <li>Necklaces</li>
+                                            <li>Watches & Others</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Fashion accessories
+                                                </h4>
+                                            </li>
+                                            <li>Bags & Purses</li>
+                                            <li>Sunglasses</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Gifts</h4>
+                                            </li>
+                                            <li>
+                                                Gifts for Her
+                                            </li>
+                                            <li>Gifts for him</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Brands
+                                                </h4>
+                                            </li>
+                                            <li>Norrsken</li>
+                                        
+                                        </ul>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Wellness
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Supplements & Nutrition
+                                                </h4>
+                                            </li>
+                                            <li>Shakes</li>
+                                            <li>Soups</li>
+                                            <li>Vitamins & Minerals</li>
+                                            <li>Antioxidants</li>
+                                            <li>Omega 3</li>
+                                            <li>Gut health</li>
+                                            <li>Skin & Hair</li>
+                                            <li>Kids</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Full solutions
+                                                </h4>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Accessories</h4>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Brands
+                                                </h4>
+                                            </li>
+                                            <li>Wellness by Oriflame</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Men
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    <div class="submenutitle">
+                                        <span class="fa-light fa-paintbrush"></span>
+                                        <h3>What's New</h3>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Skin care
+                                                </h4>
+                                            </li>
+                                            <li>Cleanser</li>
+                                            <li>Moisturiser & Treatments</li>
+                                            
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Shaving & Grooming
+                                                </h4>
+                                            </li>
+                                            <li>Shaving</li>
+                                            <li>Beard care</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Body & Shower
+                                                </h4>
+                                            </li>
+                                            <li>Shower gel</li>
+                                            <li>Soap bar</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div>
+
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Hair</h4>
+                                            </li>
+                                            <li>Shampoo</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Accessories
+                                                </h4>
+                                            </li>
+                                            <li>Shaving & Grooming</li>
+                                            <li>Gifts for him</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Fragrance</h4>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Wellness</h4>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>Deodorants & Anti-perspirants</h4>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Brands
+                                                </h4>
+                                            </li>
+                                            <li>Eclat</li>
+                                            <li>Giordani Man</li>
+                                            <li>North for Men</li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Kids & Baby
+                        <div class="menunon">
+                            <div class="menucontent">
+                                <div>
+                                    
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Kids
+                                                </h4>
+                                            </li>
+                                            <li>Hair & Body wash</li>
+                                            <li>Oral care</li>
+                                            <li>Fragrance</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Baby
+                                                </h4>
+                                            </li>
+                                            <li>Hair & Body wash</li>
+                                            <li>Body care</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Brands
+                                                </h4>
+                                            </li>
+                                            <li>Baby O</li>
+                                            <li>Love Nature</li>
+                                            <li>Optifresh</li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Novelties
+                    </li>
+                    <li>
+                        Beauty Rewards Programme
+                    </li>                
+                </ul>
+            </div>
+            
         </div>
-        <div class="menucontent"></div>
     </div>
 
-    <div class="font1">Ori 1
+    <div class="signblur">
+        <div>
+            <div class="signin">
+                <h2>Sign in</h2>
+                <div>
+                    <label for="useremail">Email address or registration number*</label>
+                <input  type="email" id="useremail">
+                <label for="userpass" >
+                    Password*
+                </label>
+                <input type="password" id="userpass">
+                </div>
+                
+                
+                <a href="#">SIGN IN</a>
+                <a href="#">Forgot pasword?</a>
+                <a href="#">
+                    <span class="fa-brands fa-facebook"
+                    ></span>
+                    Continue with Facebook
+                </a>
+                <p>Register</p>
+                <a href="#">VIP Customer</a>
+                <a href="#">Brand Partner</a>
+                <a href="#">I don't Know yet</a>
+            </div>
+        </div>
+        
+    </div>    
+
+    <!-- swiper -->
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./Pic/slider1.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./Pic/slider2.png" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./Pic/slider3.png" />
+          </div>
+        </div>
+    </div>
+<!-- swiper -->
+
+<div class="underswiper">
+    <div>
+        <a href="">
+            <span class="fa fa-book
+                "></span>
+                ECATALOGUE
+        </a>
+        <a href="">
+            SKIN CARE
+        </a>
+        <a href="">
+            MAKE-UP
+        </a>
+        <a href="">
+            FRAGRANCE
+        </a>
+        <a href="">
+            BATH & BODY
+        </a>
+        <a href="">
+            HAIR
+        </a>
+        <a href="">
+            ACCESSORIES
+        </a>
+        <a href="">
+            WELLNESS
+        </a>
+        <a href="">
+            MEN
+        </a>
+        <a href="">
+            KIDS & BABY
+        </a>
+    </div>
+</div>
+
+
+<div class="whatsnew">
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div></div>
+</div>
+    
+
+    <!-- <div class="font1">Ori 1
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, reprehenderit dolorem? Cupiditate, sapiente iusto optio quidem illum ab, voluptatum debitis atque magnam nemo beatae tempore amet numquam maiores cumque ad.</p>
     </div>
     <div class="font2">Ori 2
@@ -103,5 +1073,59 @@
     <div class="font4">Ori 4
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis soluta cupiditate cum eligendi suscipit eos molestiae ad et quia. Numquam impedit iusto nemo eligendi accusantium totam mollitia sit architecto!</p>
     </div>
+    <img src="./Pic/OriLogo.png" id="bebel" alt=""> -->
+
+
+
+    <script>
+        document.querySelector("#togglemenu").addEventListener("click",function(){
+            document.querySelector("div.menublur").classList.toggle("show")
+        })
+        document.querySelector("#usericon").addEventListener("click",function(){
+            document.querySelector("div.signblur").classList.toggle("show")
+        })
+        console.log(document.querySelector("#closebluebar"));
+        document.querySelector("#closebluebar").addEventListener("click",function(){
+            document.querySelector("#bluebar").classList.add("hide")
+        })
+        document.querySelector("#usericon").addEventListener("mouseenter", function(){
+            this.classList.remove("fa-light")
+            this.classList.add("fa")
+        })
+        document.querySelector("#usericon").addEventListener("mouseleave", function(){
+            this.classList.remove("fa")
+            this.classList.add("fa-light")
+        })
+        document.querySelector("#shoppingbag").addEventListener("mouseenter", function(){
+            this.classList.remove("fa-light")
+            this.classList.add("fa")
+            // document.querySelector("#bagmenu").classList.add("show")
+        })
+        document.querySelector("#shoppingbag").addEventListener("mouseleave", function(){
+            this.classList.remove("fa")
+            this.classList.add("fa-light")
+            // document.querySelector("#bagmenu").classList.remove("show")
+        })
+    </script>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          speed: 600,
+          parallax: true,
+          autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    <!-- Swiper -->
+   
+
 </body>
 </html>
