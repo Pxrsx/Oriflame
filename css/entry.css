@@ -39,15 +39,21 @@ div.citylist1>ul>li{
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: transparent;
-    color: #444;
+    background-color: white;
+    color: black;
     cursor: pointer;
+    padding: 18px;
     width: 100%;
-    border: none;
     text-align: left;
+    border: none;
     outline: none;
-    font-size: 13px;
+    transition: 0.4s;
+    font-weight: bold;
+    margin-bottom: 2px;
   }
+  .collapsible>i{
+    float: right;
+}
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
