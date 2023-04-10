@@ -7,7 +7,7 @@
     <title>Ori Joon</title>
     <link rel="stylesheet" href="./Fawesome/css/all.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/entry.css">
+    <!-- <link rel="stylesheet" href="./css/entry.css"> -->
     <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
                 <div class="navleft">
                      <div class="menuiconmini">
                         <input type="checkbox" id="menu_checkbox" >
-                        <label for="menu_checkbox">
+                        <label class="iconmini" for="menu_checkbox">
                         <div></div>
                         <div></div>
                         <div></div>
@@ -52,6 +52,15 @@
                 
                         </span>
                     </div>
+                </div>
+                <div class="minisearch">
+                    <div>
+                        <div class="searchbarmini">
+                            <span class="fa-light fa-search"></span>
+                            <input type="search" placeholder="Search">
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 <div class="bluebar" id="bluebar">
@@ -133,13 +142,13 @@
     <div class="menumini" id="minimenu" >
         <div class="menuminicontent">
             <div class="menumini-top">
-                <div>
+                <div id="products">
                     <span class="fa fa-bars"></span>
                     <p>
                         PRODUCTS:
                     </p>
                 </div>
-                <div>
+                <div id="register">
                     <span class="fa-light fa-user"></span>
                     <p>
                         SIGN IN/REGISTER
@@ -148,17 +157,42 @@
             </div>
             <div class="menumini-acord">
                 <ul>
-                    Best Offers
+                    <!-- <li>Best Offers</li> -->
+                    <div>Best Offer</div>
+                    
 
                     <li>
+                        <!-- <div class="c">
+                            <input type="checkbox" id="faq-1">
+                            <h1>
+                                <label for="faq-1">eCatalogue</label>
+                            </h1>
+                            <div class="p">
+                              <p>This a very very simple accordion.</p>
+                              <p>This a very very simple accordion.</p>
+                              <p>This a very very simple accordion.</p>
+                            </div>
+                          </div> -->
                         <button type="button" class="collapsible">eCatalogue<i class="fa-thin fa-chevron-down"></i></button>
                         <div class="content">
                             <div class="countries-list">
-                                <ul>
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                </ul>
+                                <div>
+                                    <div>
+                                        <div><img src="./Pic/contentImage4.jpg" alt=""></div>
+                                        <div>
+                                            <p>5.4.2023 - 26.4.2023</p>
+                                            <p>Catalogue 06</p>
+                                        </div>
+                                        
+                                    </div>
+                                    <div>
+                                        <a href="">
+                                            SEE ALL
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                                
                             </div>
                         </div>
                     </li>
@@ -176,9 +210,10 @@
                     </li>
 
                     <li>
-                        <button type="button" class="collapsible">Skin care <i class="fa-thin fa-chevron-down"></i></button>
-                        <div class="content">
+                        <button type="button" class="collapsible ">Skin care <i class="fa-thin fa-chevron-down"></i></button>
+                        <div class="content ">
                             <div class="countries-list">
+                                
                                 <ul>
                                     <li>
                                         Moisturisers
@@ -455,6 +490,40 @@
                         Beauty Reward Programme
                     </li>
                 </ul>
+            </div>
+            <div class="menuminiuser">
+                <div>
+                    <div class="signinmini" id="signinmini">
+                        <h2>Sign in</h2>
+                        <div>
+                            <!-- <label class="minilabel" for="useremail"></label> -->
+                            <p>
+                                Email address or registration number*
+                            </p>
+                            <input  type="email" id="useremail">
+                            <p>
+                                Password*
+                            </p>
+                            <!-- <label for="userpass" class="minilabel" >
+                                
+                            </label> -->
+                            <input type="password" id="userpass">
+                        </div>
+                        
+                        
+                        <a href="#">SIGN IN</a>
+                        <a href="#">Forgot pasword?</a>
+                        <a href="#">
+                            <span class="fa-brands fa-facebook"
+                            ></span>
+                            Continue with Facebook
+                        </a>
+                        <p>Register</p>
+                        <a href="#">VIP Customer</a>
+                        <a href="#">Brand Partner</a>
+                        <a href="#">I don't Know yet</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1421,11 +1490,11 @@
                 <h2>Sign in</h2>
                 <div>
                     <label for="useremail">Email address or registration number*</label>
-                <input  type="email" id="useremail">
-                <label for="userpass" >
+                    <input  type="email" id="useremail">
+                    <label for="userpass" >
                     Password*
-                </label>
-                <input type="password" id="userpass">
+                    </label>
+                    <input type="password" id="userpass">
                 </div>
                 
                 
@@ -1648,6 +1717,85 @@
     </div>
     <div class="purpcirc"></div>
 </div>
+
+<div class="bestoffersmini">
+        <div class="bestoffersleft-top">
+            <h2>Best offers</h2>
+        </div>
+        <div class="bestoffersright">
+            <img src="./Pic/contentImage12.jpg" alt="">
+            <p>
+                BEST OFFERS <br> 
+                SELECTION
+            </p>
+            <a href="#">SHOP NOW</a>
+        </div>
+        <div class="bestoffersleft-bottom">
+            <div>
+                <div class="oriflame-product-card">
+                    <div>
+                        <img src="./Pic/png/image16-removebg-preview.png" alt="">
+                        <span class="fa-light fa-shopping-bag"></span>
+                    </div>
+                    <div>
+                        <p>POSSESS</p>
+                        <p>Eau de Parfum</p>
+                        <p>&nbsp;</p>
+                        <span>£25.99</span>
+                        <span>£46.00</span>
+                        
+                    </div>
+                </div>
+                <div class="oriflame-product-card">
+                    <div>
+                        <img src="./Pic/png/image2-removebg-preview.png" alt="">
+                        <span class="fa-light fa-shopping-bag"></span>
+                    </div>
+                    <div>
+                        <p>THE ONE</p>
+                        <p>Colour Unlimited Eye Shadow</p>
+                        <p>&nbsp;</p>
+                        <span>£6.99</span>
+                        <span>£12.50</span>
+                        
+                    </div>
+                </div>
+                <div class="oriflame-product-card">
+                    <div>
+                        <img src="./Pic/png/image4-removebg-preview.png" alt="">
+                        <span class="fa-light fa-shopping-bag"></span>
+                    </div>
+                    <div>
+                        <p>
+                            FEET UP
+                        </p>
+                        <p>Advanced 36H Odour Control Anti-perspirant foot spray</p>
+                        <span>£7.99</span>
+                        <span>£14.50</span>
+                        
+                    </div>
+                </div>
+                <div class="oriflame-product-card">
+                    <div>
+                        <img src="./Pic/png/image11-removebg-preview.png" alt="">
+                        <span class="fa-light fa-shopping-bag"></span>
+                    </div>
+                    <div>
+                        <p>
+                            FEET UP
+                        </p>
+                        <p>Advanced Cracked Heel Repair & Smooth Foot Cream</p>
+                        <span>£5.49</span>
+                        <span>£11.00</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <div class="purpcirc"></div>
+</div>
+
 <div class="shopoffer50">
     <div>
         <img src="./Pic/contentImage4.jpg" alt="">
@@ -1999,9 +2147,17 @@
             document.querySelector("#menu").classList.toggle("show")
         })
 
+        document.querySelector("#register").addEventListener("click", function(){
+            document.querySelector("div.menuminiuser").classList.toggle("show")
+            this.classList.toggle("white")
+            document.querySelector("#products").classList.toggle("grey")
+
+        })
         // console.log(document.querySelector("#minimenu")
         // );
-
+        document.querySelector("div.searchbar").addEventListener("click",function(){
+            document.querySelector("div.minisearch").classList.toggle("show")
+        })
         document.querySelector("#menu_checkbox").addEventListener("click",function(){
             document.querySelector("#minimenu").classList.toggle("show")
         })
@@ -2009,9 +2165,11 @@
             document.querySelector("div.signblur").classList.toggle("show")
         })
         console.log(document.querySelector("#closebluebar"));
+
         document.querySelector("#closebluebar").addEventListener("click",function(){
             document.querySelector("#bluebar").classList.add("hide")
         })
+        
         document.querySelector("#usericon").addEventListener("mouseenter", function(){
             this.classList.remove("fa-light")
             this.classList.add("fa")
